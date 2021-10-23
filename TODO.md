@@ -1,0 +1,2 @@
+- [ ] reduce size of container
+- [ ] add other cloud cli
