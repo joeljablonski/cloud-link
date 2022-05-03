@@ -40,4 +40,10 @@ RUN chmod +x terraform && mv terraform /usr/local/bin/
 # install helm 3
 RUN curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
+RUN yum install -y jq
+
+# install terragrunt v0.36.9 (latest at time)
+RUN curl -o /tmp/terragrunt -LO https://github.com/gruntwork-io/terragrunt/releases/download/v0.36.9/terragrunt_linux_amd64
+RUN chmod +x /tmp/terragrunt && mv /tmp/terragrunt /usr/local/bin/terragrunt
+
 ENTRYPOINT [ "sh" ]

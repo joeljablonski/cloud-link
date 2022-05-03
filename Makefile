@@ -1,4 +1,4 @@
-VERSION=v1.2
+VERSION=v1.3
 IMAGE_NAME=cloud-link
 DOCKER_USERNAME=blockywire
 
